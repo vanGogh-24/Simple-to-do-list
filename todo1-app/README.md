@@ -31,47 +31,6 @@ Giao diện người dùng được thiết kế sạch sẽ, responsive bằng 
 * **Frontend:** HTML5, CSS3, Bootstrap 5, Font Awesome
 * **Môi trường:** XAMPP, WAMP, MAMP, hoặc LAMP.
 
-##  Cấu trúc thư mục
-##  Cài đặt và Chạy dự án
-
-Thực hiện các bước sau để chạy dự án trên máy local của bạn.
-
-### 1. Yêu cầu
-* Một môi trường server web (ví dụ: [XAMPP](https://www.apachefriends.org/index.html) hoặc [WAMP](https://www.wampserver.com/en/)).
-* Trình duyệt web.
-* Trình quản lý CSDL (như phpMyAdmin, đi kèm với XAMPP/WAMP).
-
-### 2. Cài đặt
-
-1.  **Tải mã nguồn:**
-    * Tải hoặc clone dự án này vào thư mục `htdocs` (của XAMPP) hoặc `www` (của WAMP).
-    * Ví dụ: `C:/xampp/htdocs/todo-app`
-
-2.  **Khởi động Server:**
-    * Mở XAMPP/WAMP Control Panel và khởi động **Apache** và **MySQL**.
-
-3.  **Tạo Cơ sở dữ liệu:**
-    * Mở trình duyệt và truy cập `http://localhost/phpmyadmin`.
-    * Tạo một CSDL mới với tên là `todo_app` (khuyến khích dùng Bảng mã `utf8mb4_unicode_ci`).
-    * Chọn CSDL `todo_app` vừa tạo, nhấp vào tab **Import** (Nhập).
-    * Tải lên tệp `database.sql` từ thư mục dự án và thực thi nó. Thao tác này sẽ tự động tạo bảng `users` và `tasks`.
-
-4.  **Cấu hình Kết nối CSDL:**
-    * Mở tệp `config/database.php`.
-    * Chỉnh sửa các thông tin sau cho phù hợp với môi trường của bạn:
-        ```php
-        $host = '127.0.0.1'; // Hoặc 'localhost'
-        $db   = 'todo_app';
-        $user = 'root'; // User CSDL của bạn
-        $pass = '';     // Mật khẩu CSDL của bạn
-        ```
-    * (Thông thường, cài đặt mặc định của XAMPP/WAMP là `root` và không có mật khẩu).
-
-5.  **Chạy ứng dụng:**
-    * Mở trình duyệt và truy cập: `http://localhost/todo-app/`
-    * Bạn sẽ được tự động chuyển đến trang `login.php` nếu chưa đăng nhập.
-    * Hãy bắt đầu bằng cách tạo một tài khoản mới trên trang `register.php`!
-
 ##  Cấu trúc Cơ sở dữ liệu
 
 ### Bảng `users`
